@@ -1,0 +1,726 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #000;
+    color: #292929;
+}
+
+
+/* =====================================
+   MAIN MOBILE APP
+===================================== */
+
+body {
+    max-width: 720px;
+    min-height: 100vh;
+    margin: auto;
+    background: #f3fafa;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header {
+    width: 100%;
+    height: 168px;
+
+    background: #087b78;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 28px;
+
+    gap: 15px;
+
+    color: white;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+/* Welcome */
+
+.welcome {
+    flex: 1;
+}
+
+.welcome .heading {
+    margin: 0;
+
+    font-size: 27px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+.welcome p {
+    margin-top: 6px;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    letter-spacing: .2px;
+}
+
+
+/* Header buttons */
+
+.header > a {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 2px solid rgba(255, 255, 255, 0.45);
+
+    border-radius: 50%;
+
+    font-size: 21px;
+
+    transition: .3s;
+}
+
+.header > a:hover {
+    background: rgba(255,255,255,.15);
+
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   MAIN
+===================================== */
+
+main {
+    width: 100%;
+
+    background: #f3fafa;
+
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+
+    overflow: hidden;
+
+    margin-top: -1px;
+}
+
+
+/* =====================================
+   BANNER
+===================================== */
+
+.banner-container {
+    width: 100%;
+
+    padding: 35px 65px 30px;
+}
+
+.banner {
+    width: 100%;
+    height: 180px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    background: #dedede;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.06);
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =====================================
+   SCROLLING MESSAGE
+===================================== */
+
+.scroll {
+    width: 100%;
+    height: 70px;
+
+    background: #087b78;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.scroll marquee {
+    width: 100%;
+}
+
+.scroll span {
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================
+   SERVICES GRID
+===================================== */
+
+.section-grids {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 50px 30px 130px;
+
+    background: #f3fafa;
+}
+
+
+/* =====================================
+   SERVICE COLUMN
+===================================== */
+
+.section-grids > .services {
+    position: relative;
+
+    padding: 0 15px;
+
+    margin-bottom: 70px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* =====================================
+   SERVICE CARD
+===================================== */
+
+.service-icon {
+    width: 138px;
+    height: 105px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        145deg,
+        #e3f2f1,
+        #d0e7e6
+    );
+
+    border: 2px solid #b7d7d6;
+
+    border-radius: 20px;
+
+    color: #087b78;
+
+    box-shadow:
+        0 10px 25px rgba(0, 100, 100, .10);
+
+    transition: all .3s ease;
+
+    text-align: center;
+}
+
+
+/* =====================================
+   SERVICE ICON
+===================================== */
+
+.service-icon > i {
+    font-size: 39px;
+
+    color: #087b78;
+}
+
+
+/* =====================================
+   SERVICE TEXT
+===================================== */
+
+.service-icon p {
+    position: absolute;
+
+    top: 117px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 160px;
+
+    margin: 0;
+
+    color: #292929;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    text-align: center;
+}
+
+
+/* =====================================
+   LINKS INSIDE SERVICE
+===================================== */
+
+.service-icon a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: #087b78;
+}
+
+.service-icon a p {
+    position: absolute;
+
+    top: 117px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 160px;
+
+    margin: 0;
+
+    color: #292929;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    text-align: center;
+}
+
+
+/* =====================================
+   HOVER EFFECT
+===================================== */
+
+.service-icon:hover {
+    transform: translateY(-6px);
+
+    border-color: #087b78;
+
+    box-shadow:
+        0 15px 30px rgba(0, 100, 100, .18);
+}
+
+
+/* =====================================
+   CLICK EFFECT
+===================================== */
+
+.service-icon:active {
+    transform: scale(.94);
+}
+
+
+/* =====================================
+   BOTTOM NAVIGATION
+===================================== */
+
+.bottom-nav {
+    position: fixed;
+
+    left: 50%;
+    bottom: 18px;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 70px);
+    max-width: 570px;
+
+    height: 78px;
+
+    background: #087b78;
+
+    border-radius: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    padding: 5px 12px;
+
+    color: white;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.25);
+
+    z-index: 999;
+}
+
+
+/* Nav item */
+
+.nav-item {
+    height: 60px;
+
+    min-width: 75px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+
+/* Nav icons */
+
+.nav-item i {
+    font-size: 25px;
+
+    color: white;
+}
+
+
+/* Active Home */
+
+.nav-item.active {
+    min-width: 190px;
+
+    height: 60px;
+
+    padding: 0 25px;
+
+    border: 2px solid white;
+
+    border-radius: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    font-size: 20px;
+}
+
+.nav-item.active i {
+    font-size: 23px;
+}
+
+
+/* =====================================
+   NAV HOVER
+===================================== */
+
+.nav-item:not(.active):hover {
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media screen and (max-width: 600px) {
+
+    .header {
+        height: 168px;
+
+        padding: 20px 15px;
+
+        gap: 10px;
+    }
+
+
+    .logo {
+        width: 62px;
+        height: 62px;
+    }
+
+
+    .welcome .heading {
+        font-size: 21px;
+    }
+
+
+    .welcome p {
+        font-size: 14px;
+    }
+
+
+    .header > a {
+        width: 43px;
+        height: 43px;
+
+        font-size: 18px;
+    }
+
+
+    /* Banner */
+
+    .banner-container {
+        padding: 35px 65px 30px;
+    }
+
+
+    .banner {
+        height: 180px;
+    }
+
+
+    /* Scroll */
+
+    .scroll {
+        height: 70px;
+    }
+
+
+    .scroll span {
+        font-size: 17px;
+    }
+
+
+    /* Services */
+
+    .section-grids {
+        padding: 50px 25px 130px;
+    }
+
+
+    .section-grids > .services {
+        padding-left: 5px;
+        padding-right: 5px;
+
+        margin-bottom: 70px;
+    }
+
+
+    .service-icon {
+        width: 120px;
+        height: 100px;
+
+        border-radius: 19px;
+    }
+
+
+    .service-icon p {
+        top: 112px;
+
+        width: 140px;
+
+        font-size: 18px;
+    }
+    .service-icon a  {
+        top: 112px;
+
+        width: 140px;
+
+        font-size: 40px;
+    }
+
+    /* Bottom navigation */
+
+    .bottom-nav {
+        width: calc(100% - 70px);
+
+        height: 75px;
+
+        bottom: 15px;
+    }
+
+
+    .nav-item.active {
+        min-width: 150px;
+
+        font-size: 18px;
+    }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media screen and (max-width: 400px) {
+
+    .header {
+        padding: 18px 10px;
+    }
+
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+
+    .welcome .heading {
+        font-size: 18px;
+    }
+
+
+    .welcome p {
+        font-size: 12px;
+    }
+
+
+    .header > a {
+        width: 38px;
+        height: 38px;
+
+        font-size: 16px;
+    }
+
+
+    /* Banner */
+
+    .banner-container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+
+    .banner {
+        height: 170px;
+    }
+
+
+    /* Services */
+
+    .section-grids {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .section-grids > .services {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+
+    .service-icon {
+        width: 105px;
+        height: 88px;
+
+        border-radius: 17px;
+    }
+
+
+    .service-icon > i {
+        font-size: 29px;
+    }
+
+
+    .service-icon p,
+    .service-icon a p {
+        top: 100px;
+
+        width: 115px;
+
+        font-size: 14px;
+    }
+
+
+    /* Bottom */
+
+    .bottom-nav {
+        width: calc(100% - 35px);
+
+        height: 70px;
+    }
+
+
+    .nav-item.active {
+        min-width: 120px;
+
+        height: 55px;
+
+        padding: 0 15px;
+
+        font-size: 16px;
+
+        gap: 8px;
+    }
+
+
+    .nav-item i {
+        font-size: 21px;
+    }
+
+}
